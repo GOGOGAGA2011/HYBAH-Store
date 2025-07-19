@@ -153,21 +153,12 @@ header {
       margin-top: 5px;
     }
 
-.product-card {
-  width: 100%;
-  max-width: 180px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.product-card img {
-  width: 100%;
-  height: 180px; /* خليها مربعة تقريبا */
-  object-fit: cover;
+   .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 20px 10px;
+  justify-items: center;
 }
 
 .product-card {
@@ -187,22 +178,6 @@ header {
   object-fit: cover;
 }
 
-
-    .product-card {
-      width: 280px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-      padding-bottom: 10px;
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
 
     .product-card .title {
       font-size: 15px;
@@ -227,7 +202,9 @@ header {
       color: #e60000;
       font-size: 13px;
       margin-right: 5px;
-    }@media (max-width: 768px) {
+    }
+
+@media (max-width: 768px) {
   .header-box {
     padding: 20px 15px;
     border-radius: 20px;
@@ -283,6 +260,7 @@ header {
   }
 }
 
+
   </style>
 </head>
 <body>
@@ -311,8 +289,7 @@ header {
     <div class="search-box">
       <input type="text" placeholder="بحث Search ...">
     </div>
-    <div class="delivery-note">التسليم خلال 1 - 6 يوم عمل • </div> <dr>
-       <div class="delivery-note> لإنشاء طلب أو عمل أوردر يرجى التواصل بواسطة أي صفحة  </div>
+    <div class="delivery-note">التسليم خلال 1 - 6 يوم عمل • </div>
   </div>
 </header>
 
@@ -352,6 +329,12 @@ header {
     </div>
 
 
+
+  </section>
+  </font>
+
+</body>
+</html>
 
   </section>
   </font>
